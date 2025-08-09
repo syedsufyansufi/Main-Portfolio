@@ -21,7 +21,7 @@ import "./index.css";
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState("hero");
-  const [isVisible, setIsVisible] = useState({});
+  const [isVisible, setIsVisible] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
     const observer = new IntersectionObserver(
