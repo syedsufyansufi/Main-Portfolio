@@ -15,13 +15,15 @@ import {
   Trophy,
   Users,
 } from "lucide-react";
-import { useEffect, useState } from "react";
-import "./index.css";
+import { useEffect, useState ,useRef } from "react";
 import headerImg from "./header.jpg";
+import "./index.css";
 
 const Portfolio = () => {
+  const sections = ["hero", "about", "skills", "projects", "achievements"];
+  const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
   const [activeSection, setActiveSection] = useState("hero");
-  const [isVisible, setIsVisible] = useState({});
+  const [isVisible, setIsVisible] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
     const observer = new IntersectionObserver(
