@@ -16,8 +16,8 @@ import {
   Users,
 } from "lucide-react";
 import { useEffect, useState } from "react";
-import "./index.css";
 import headerImg from "./header.jpg";
+import "./index.css";
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState("hero");
