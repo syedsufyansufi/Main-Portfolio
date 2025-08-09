@@ -613,14 +613,6 @@ const Portfolio = () => {
           >
             Back to Top
           </button>
-          <a
-            href="https://drive.google.com/file/d/1onEXgIhcd7OVYj-n5Q9EsyuJhd16t2wf/view"
-            className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-105"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>View CV</span>
-          </a>
 
           <p className="text-gray-400">
             © 2024 Syed Sufiyan Ameen. Built with React & Tailwind CSS
