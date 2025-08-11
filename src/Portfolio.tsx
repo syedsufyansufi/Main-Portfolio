@@ -166,6 +166,12 @@ const Portfolio = () => {
                 <span>Call Me</span>
               </a>
               
+                <a
+                href="https://drive.google.com/file/d/1Nl2k6XZP684sSSVOMTIPMX8DgI2rWwzU/view?usp=sharing"
+                className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-105"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Briefcase size={20} />
                 <span>View CV</span>
               </a>
