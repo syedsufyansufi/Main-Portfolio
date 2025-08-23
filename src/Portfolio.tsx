@@ -70,6 +70,14 @@ const Portfolio = () => {
       tech: ["React.js", "Material-UI", "Node.js"],
       achievement: "Production Application",
     },
+    {
+    title: "Movie Discovery App",
+    description: "A modern, responsive movie discovery application built with React and TMDB API. Features smart search with debouncing, trending movies tracking via Appwrite, and a beautiful UI. Users can search through thousands of movies and view top trending films based on search activity.",
+    achievement: "Live on Vercel",
+    tech: ["React", "Vite", "TMDB API", "Appwrite", "CSS3", "JavaScript"],
+    link: "https://movie-app-six-ruddy.vercel.app/",
+    github: "https://github.com/yourusername/movie-app" // Replace with your actual GitHub repo
+  }
   ];
 
   const ScrollToTop = () => {
@@ -456,63 +464,81 @@ const Portfolio = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" data-section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
+      {/* Updated Projects Section with clickable links */}
+<section id="projects" data-section className="py-20 px-4">
+  <div className="max-w-6xl mx-auto">
+    <div
+      className={`transform transition-all duration-1000 ${
+        isVisible.projects
+          ? "translate-y-0 opacity-100"
+          : "translate-y-10 opacity-0"
+      }`}
+    >
+      <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+        Featured Projects
+      </h2>
+      <div className="grid md:grid-cols-2 gap-8">
+        {projects.map((project, index) => (
           <div
-            className={`transform transition-all duration-1000 ${
-              isVisible.projects
-                ? "translate-y-0 opacity-100"
-                : "translate-y-10 opacity-0"
-            }`}
+            key={index}
+            className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:scale-105 transition-all duration-300 group"
           >
-            <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-              Featured Projects
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {projects.map((project, index) => (
-                <div
-                  key={index}
-                  className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:scale-105 transition-all duration-300 group"
-                >
-                  <div className="mb-6">
-                    <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-xl font-bold text-purple-400">
-                        {project.title}
-                      </h3>
-                      <ExternalLink
-                        size={20}
-                        className="text-gray-400 group-hover:text-purple-400 transition-colors"
-                      />
-                    </div>
-                    <p className="text-gray-300 leading-relaxed mb-4">
-                      {project.description}
-                    </p>
-
-                    <div className="flex items-center gap-2 mb-4">
-                      <Award size={16} className="text-yellow-400" />
-                      <span className="text-sm text-yellow-400 font-semibold">
-                        {project.achievement}
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 px-3 py-1 rounded-full text-sm border border-white/10"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-xl font-bold text-purple-400">
+                  {project.title}
+                </h3>
+                <div className="flex gap-2">
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 group-hover:text-purple-400 transition-colors hover:scale-110"
+                      title="View Live Demo"
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                  )}
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 group-hover:text-blue-400 transition-colors hover:scale-110"
+                      title="View Source Code"
+                    >
+                      <Github size={20} />
+                    </a>
+                  )}
                 </div>
+              </div>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                {project.description}
+              </p>
+              <div className="flex items-center gap-2 mb-4">
+                <Award size={16} className="text-yellow-400" />
+                <span className="text-sm text-yellow-400 font-semibold">
+                  {project.achievement}
+                </span>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {project.tech.map((tech, techIndex) => (
+                <span
+                  key={techIndex}
+                  className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 px-3 py-1 rounded-full text-sm border border-white/10"
+                >
+                  {tech}
+                </span>
               ))}
             </div>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Education Section */}
       <section className="py-20 px-4">
