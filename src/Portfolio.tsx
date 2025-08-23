@@ -14,6 +14,7 @@ import {
   Star,
   Trophy,
   Users,
+  Github
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import "./index.css";
