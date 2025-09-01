@@ -78,7 +78,7 @@ const Portfolio = () => {
     achievement: "Live on Vercel",
     tech: ["React", "Vite", "TMDB API", "Appwrite", "CSS3", "JavaScript"],
     link: "https://movie-app-six-ruddy.vercel.app/",
-    github: "https://github.com/yourusername/movie-app", // Replace with your actual GitHub repo
+    github: "https://github.com/syedsufyansufi/MovieApp", 
   },
   {
     title: "Note Taking App",
@@ -86,10 +86,11 @@ const Portfolio = () => {
       "A feature-rich note-taking application with support for creating, editing, and organizing notes. Includes search functionality, markdown support, and a clean responsive UI.",
     achievement: "Personal Productivity Tool",
     tech: ["React.js", "Node.js", "Express", "MongoDB", "CSS3"],
-    link: "https://mern-notesapp-2.onrender.com/"
+    link: "https://mern-notesapp-2.onrender.com/",
     github: "https://github.com/syedsufyansufi/MERN-NotesApp",
   },
 ];
+
 
 
   const ScrollToTop = () => {
