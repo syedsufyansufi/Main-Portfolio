@@ -57,39 +57,48 @@ const Portfolio = () => {
   };
 
   const projects = [
-  {
-    title: "American Sign Language Recognition Web App",
-    description:
-      "Led development of an innovative ASL recognition system, recognized as the best project in department",
-    tech: ["React.js", "Machine Learning", "Computer Vision"],
-    achievement: "Top Performer - Final Year Project",
-  },
-  {
-    title: "Application to Facilitate Offs Partners",
-    description:
-      "Developed responsive interfaces with 20% improved page load time through optimization",
-    tech: ["React.js", "Material-UI", "Node.js"],
-    achievement: "Production Application",
-  },
-  {
-    title: "Movie Discovery App",
-    description:
-      "A modern, responsive movie discovery application built with React and TMDB API. Features smart search with debouncing, trending movies tracking via Appwrite, and a beautiful UI. Users can search through thousands of movies and view top trending films based on search activity.",
-    achievement: "Live on Vercel",
-    tech: ["React", "Vite", "TMDB API", "Appwrite", "CSS3", "JavaScript"],
-    link: "https://movie-app-six-ruddy.vercel.app/",
-    github: "https://github.com/syedsufyansufi/MovieApp", 
-  },
-  {
-    title: "Note Taking App",
-    description:
-      "A feature-rich note-taking application with support for creating, editing, and organizing notes. Includes search functionality, markdown support, and a clean responsive UI.",
-    achievement: "Personal Productivity Tool",
-    tech: ["React.js", "Node.js", "Express", "MongoDB", "CSS3"],
-    link: "https://mern-notesapp-2.onrender.com/",
-    github: "https://github.com/syedsufyansufi/MERN-NotesApp",
-  },
-];
+ {
+   title: "American Sign Language Recognition Web App",
+   description:
+     "Led development of an innovative ASL recognition system, recognized as the best project in department",
+   tech: ["React.js", "Machine Learning", "Computer Vision"],
+   achievement: "Top Performer - Final Year Project",
+ },
+ {
+   title: "Application to Facilitate Offs Partners",
+   description:
+     "Developed responsive interfaces with 20% improved page load time through optimization",
+   tech: ["React.js", "Material-UI", "Node.js"],
+   achievement: "Production Application",
+ },
+ {
+   title: "Movie Discovery App",
+   description:
+     "A modern, responsive movie discovery application built with React and TMDB API. Features smart search with debouncing, trending movies tracking via Appwrite, and a beautiful UI. Users can search through thousands of movies and view top trending films based on search activity.",
+   achievement: "Live on Vercel",
+   tech: ["React", "Vite", "TMDB API", "Appwrite", "CSS3", "JavaScript"],
+   link: "https://movie-app-six-ruddy.vercel.app/",
+   github: "https://github.com/syedsufyansufi/MovieApp", 
+ },
+ {
+   title: "Note Taking App",
+   description:
+     "A feature-rich note-taking application with support for creating, editing, and organizing notes. Includes search functionality, markdown support, and a clean responsive UI.",
+   achievement: "Personal Productivity Tool",
+   tech: ["React.js", "Node.js", "Express", "MongoDB", "CSS3"],
+   link: "https://mern-notesapp-2.onrender.com/",
+   github: "https://github.com/syedsufyansufi/MERN-NotesApp",
+ },
+ {
+   title: "Chatty - MERN Chat App",
+   description:
+     "A real-time chat application with instant messaging, user authentication, and online/offline status indicators. Features include contact management, message history, and a modern dark-themed UI.",
+   achievement: "Live on Render",
+   tech: ["React.js", "Node.js", "Express", "MongoDB", "Socket.io", "JWT"],
+   link: "https://mern-chatapp-b8dv.onrender.com/",
+   github: "https://github.com/syedsufyansufi/Mern-ChatApp",
+ },
+]
 
 
 
